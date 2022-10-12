@@ -1,15 +1,15 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet } from "react-router-dom";
 export const Products = () => {
   return (
     <>
       <div>
-          <input type='search' placeholder='Search products'/>
+        <input type="search" placeholder="Search products" />
       </div>
       <nav>
-          <Link to='/products/feactured'>Featured</Link>
-          <Link to='/products/new'>New</Link>
+        <Link to="/products/feactured">Featured</Link>
+        <Link to="/products/new">New</Link>
       </nav>
-      <Outlet/>
+      <Outlet />
     </>
-  )
-}
+  );
+};
