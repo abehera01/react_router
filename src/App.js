@@ -7,6 +7,10 @@ import { OrderSummary } from "./Components/OrderSummary";
 import { Products } from "./Components/Products";
 import { FeaturedProducts } from "./Components/FeaturedProducts";
 import { NewProducts } from "./Components/NewProducts";
+import { Users } from "./Components/Users";
+import { UserDetails } from "./Components/UserDetails";
+import { Admin } from "./Components/Admin";
+
 
 export default function App() {
   return (
@@ -20,6 +24,10 @@ export default function App() {
           <Route index element={<FeaturedProducts />} />
           <Route path="feactured" element={<FeaturedProducts />} />
           <Route path="new" element={<NewProducts />} />
+        </Route>
+/        <Route path="/users" element={<Users/>} >
+          <Route path=":userId" element={<UserDetails/>}/>
+          <Route path="admin" element={<Admin/>}/>
         </Route>
         <Route path="*" element={<h3>Page Not found</h3>} />
       </Routes>
