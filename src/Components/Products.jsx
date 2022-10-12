@@ -6,8 +6,8 @@ export const Products = () => {
           <input type='search' placeholder='Search products'/>
       </div>
       <nav>
-          <Link to='feactured'>Featured</Link>
-          <Link to='new'>New</Link>
+          <Link to='/products/feactured'>Featured</Link>
+          <Link to='/products/new'>New</Link>
       </nav>
       <Outlet/>
     </>
