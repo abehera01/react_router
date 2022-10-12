@@ -17,9 +17,9 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/order-summary" element={<OrderSummary />} />
         <Route path="/products" element={<Products />}>
-          <Route index element={<FeaturedProducts />}/>
-          <Route path='feactured' element={<FeaturedProducts />}/>
-          <Route path='new' element={<NewProducts />}/>
+          <Route index element={<FeaturedProducts />} />
+          <Route path="feactured" element={<FeaturedProducts />} />
+          <Route path="new" element={<NewProducts />} />
         </Route>
         <Route path="*" element={<h3>Page Not found</h3>} />
       </Routes>
