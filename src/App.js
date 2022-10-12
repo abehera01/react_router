@@ -13,6 +13,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/order-summary" element={<OrderSummary />} />
+        <Route path="*" element={<h3>Page Not found</h3>} />
       </Routes>
     </div>
   );

@@ -1,19 +1,19 @@
 import { NavLink } from "react-router-dom";
 export const Navbar = () => {
-  const navLinkStyles = ({ isActive }) => {
-    return {
-      fontWeigth: isActive ? "bold" : "normal",
-      TextDecoder: isActive ? "none" : "underline"
-    };
-  };
+  // const navLinkStyles = ({ isActive }) => {
+  //   return {
+  //     fontWeigth: isActive ? "bold" : "normal",
+  //     TextDecoder: isActive ? "none" : "underline",
+  //   };
+  // };
   return (
-    <>
-      <NavLink style={navLinkStyles} to="/">
+    <nav>
+      <NavLink  to="/">
         Home
       </NavLink>
-      <NavLink style={navLinkStyles} to="/about">
+      <NavLink to="/about">
         About
       </NavLink>
-    </>
+    </nav>
   );
 };
